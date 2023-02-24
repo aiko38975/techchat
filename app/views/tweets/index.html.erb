@@ -1,0 +1,8 @@
+<h1>TECH CHATへようこそ!</h1>
+<h2>ここには、質問の投稿一覧が表示されています</h2>
+
+<% @tweets.each do |tweet| %>
+  タイトル：<%= tweet.title %><br>
+  内容：<%= tweet.text %><br>
+  投稿者名：<%= tweet.name %><br><br>
+<% end %>

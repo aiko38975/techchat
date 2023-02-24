@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 2023_02_24_012931) do
   create_table "tweets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.string "title"
     t.string "name"
-    t.string "text"
+    t.text "text"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
